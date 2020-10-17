@@ -1,0 +1,13 @@
+//constant time operations - O(1)
+class Stack<T> {
+    var store : [T] = []
+func peek() -> T? {
+        return store.last
+    }
+func push(_ value: T) {
+        store.append(value)
+    }
+func pop() -> T? {
+        return store.isEmpty ? nil : store.removeLast()
+    }
+}
